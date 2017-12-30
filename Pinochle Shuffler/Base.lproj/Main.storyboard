@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pinochle_Shuffler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinochle Shuffler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-Fa-MXl">
+                                <rect key="frame" x="50" y="32" width="131" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1 phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jI-Ie-2YH">
+                                <rect key="frame" x="50" y="64.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="wY9-ZX-Wef"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2 phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fb2-dd-adX">
+                                <rect key="frame" x="50" y="106.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="dGe-FH-egN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3 phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCa-BI-9rY">
+                                <rect key="frame" x="50" y="148.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="TrB-H5-liF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4 phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t99-hL-sq5">
+                                <rect key="frame" x="50" y="190.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="cR2-22-D41"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-54-UJr">
+                                <rect key="frame" x="50" y="232.5" width="133" height="29"/>
+                                <segments>
+                                    <segment title="Pinochle"/>
+                                    <segment title="Euchre"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ow5-Zx-1Qb">
+                                <rect key="frame" x="50" y="272.5" width="31" height="30"/>
+                                <state key="normal" title="Deal"/>
+                                <connections>
+                                    <action selector="clickDeal" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewr-7E-WMY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5jI-Ie-2YH" firstAttribute="top" secondItem="ldE-Fa-MXl" secondAttribute="bottom" constant="12" id="0eV-Up-1He"/>
+                            <constraint firstItem="5jI-Ie-2YH" firstAttribute="top" secondItem="ldE-Fa-MXl" secondAttribute="bottom" constant="12" id="2Qh-Cj-J3m"/>
+                            <constraint firstItem="5jI-Ie-2YH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6ll-VR-eF0"/>
+                            <constraint firstItem="ow5-Zx-1Qb" firstAttribute="top" secondItem="6Na-54-UJr" secondAttribute="bottom" constant="12" id="B3u-gb-qgD"/>
+                            <constraint firstItem="fb2-dd-adX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="CLs-Fs-xvy"/>
+                            <constraint firstItem="6Na-54-UJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="D5s-DQ-ibj"/>
+                            <constraint firstItem="FCa-BI-9rY" firstAttribute="top" secondItem="fb2-dd-adX" secondAttribute="bottom" constant="12" id="FXD-vj-hsb"/>
+                            <constraint firstItem="fb2-dd-adX" firstAttribute="top" secondItem="5jI-Ie-2YH" secondAttribute="bottom" constant="12" id="OEN-5A-eey"/>
+                            <constraint firstItem="FCa-BI-9rY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UYm-U4-GwT"/>
+                            <constraint firstItem="t99-hL-sq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="YoC-mW-JhP"/>
+                            <constraint firstItem="6Na-54-UJr" firstAttribute="top" secondItem="t99-hL-sq5" secondAttribute="bottom" constant="12" id="Zon-UO-rig"/>
+                            <constraint firstItem="ldE-Fa-MXl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jXp-2B-FaE"/>
+                            <constraint firstItem="ldE-Fa-MXl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="pIm-YW-o4x"/>
+                            <constraint firstItem="ow5-Zx-1Qb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wia-g6-w8v"/>
+                            <constraint firstItem="t99-hL-sq5" firstAttribute="top" secondItem="FCa-BI-9rY" secondAttribute="bottom" constant="12" id="yZk-yJ-sdn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameMode" destination="6Na-54-UJr" id="nfQ-FT-3RN"/>
+                        <outlet property="phone1" destination="5jI-Ie-2YH" id="6iH-db-aYv"/>
+                        <outlet property="phone2" destination="fb2-dd-adX" id="oVe-ic-PVO"/>
+                        <outlet property="phone3" destination="t99-hL-sq5" id="ZtP-St-GW2"/>
+                        <outlet property="phone4" destination="t99-hL-sq5" id="qb9-87-UKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
